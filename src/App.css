@@ -1,0 +1,868 @@
+body{
+  background-color: hwb(33 78% 4%);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.tile
+{
+  fill: red;
+}
+
+.player
+{
+  fill:lightgoldenrodyellow;
+  transition: transform 500ms;
+}
+
+
+@keyframes jump
+{
+   0% 
+   {
+    scale:1;
+   }
+   50% 
+   {
+    scale: 2;
+   }
+   100% 
+   {
+    scale: 1;
+   }
+}
+
+.jumper
+{
+  animation: jump 1s;
+}
+.buttons-container
+{
+  text-align: center;
+  margin-top: 2rem;
+  flex-direction: column;
+  position: relative;
+  transition: all ease-in-out;
+  align-items: center;
+  
+
+}
+
+.btn button
+{
+  border-radius: 1rem;
+  background-color:silver;
+  color: black;
+}
+
+
+ .btn:hover + .details
+{
+  opacity: 1;
+    padding-bottom: 1rem;
+  
+}
+
+.btn + .details {
+  
+ 
+  width: 200px;
+  background-color: #89CFF0 ;
+  z-index: 4;
+  border-radius: 10px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  box-shadow: 2px 2px 4px rgba(78, 78, 78, 0.9);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 2rem;
+  width: 50%;
+  padding: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 1rem;
+}
+
+
+.details
+{
+  margin: auto;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.imgframe
+{
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+}
+
+.kindofgame
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.kindofgame button 
+{
+  margin-right: 1rem;
+  background-color: bisque;
+  border:1px solid grey;
+  transition-duration: 0.4s;
+}
+.button1:hover {
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  
+}
+
+.imgframe img
+{
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+svg
+{
+ width: 500px;
+ height: 300px;
+ margin-top: 0%;
+border: 3px solid black;
+}
+
+.imgfield
+{
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 2px;
+
+}
+
+.imgfield img{
+  width: 60px;
+  height: 60px;
+}
+
+.fields
+{
+  display: flex;
+  margin-left: 550px;
+}
+
+.fields button
+{
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 30px;
+}
+
+.tile {
+  fill: red;
+}
+ 
+.player {
+  fill: lightgoldenrodyellow;
+  transition: transform 500ms;
+}
+
+.playerP {
+  fill: lightgoldenrodyellow;
+  transition: transform 700ms;
+}
+
+
+
+.dest
+
+{
+  transition: transform 500ms;
+
+}
+.cena
+{
+  display: flex;
+  justify-content: center;
+}
+.selected {
+  outline: 2px solid black;
+}
+ 
+.opt-container {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.options {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 100px;
+}
+ 
+.option {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  
+}
+ 
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
+}
+
+.dugme 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  
+
+}
+.srcdst
+{
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.dugme :last-child
+{
+  margin-left: 5px;
+}
+
+.dugme :first-child
+{
+  margin-right: 5px;
+}
+.prozor {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.prozor::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./images/terrain.png') center/cover no-repeat fixed;
+  opacity: 0.8; /* Providnost slike */
+  z-index: -1; /* Postavljanje ispod sadržaja .pocetna */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pocetna{
+  text-align: center;
+  display: flex;
+  width: 70%;
+  height: 95%;
+  border: 3px solid gray;
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  opacity: 0.85;
+}
+
+
+.pocetna h1 {
+  font-size: 5em;
+  margin-bottom: 20px;
+}
+.pocetna p{
+  width: 80%;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.pocetna button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.pocetna button:hover {
+  background-color: #0056b3;
+}
+.agenti{
+  width: 60%;
+  height: 90px;
+  background-color: white;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid gray;
+  border-radius: 5px;
+
+}
+.agentiLeft{
+  width: 14%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.agentiLeft img{
+  width: 90;
+  height: 90px;
+}
+.agentiRight{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.agentiRight p{
+  font-size: 14px;
+  width: 100%;
+}
+
+
+.buttons-container
+{
+  justify-content: center;
+}
+.brojIgraca
+{
+  gap:10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.brojIgraca button
+{
+  height: 20px;
+  margin-top: 15px;
+}
+
+.brojIgraca button:hover
+{
+  background-color: darkgray;
+}
+.slika {
+  background-image: url('/src/images/terrain.png');
+  width: 1080px; /* Postavite željenu širinu */
+  height: 600px; /* Postavite željenu visinu */
+  border: 3px solid black;
+  /*width: 1080px; /* Postavite željenu širinu */
+  /*height: 600px;*/
+}
+
+/* stilizacija za tabelu */
+.srcdst table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 400px;
+  background-color: silver;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top:"10px";
+}
+
+/* stilizacija za redove u tabeli */
+.srcdst tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* stilizacija za ćelije u tabeli */
+.srcdst td {
+  padding: 8px;
+}
+
+/* stilizacija za prvi red (Source i Agent) */
+.srcdst tr:first-child {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+/* stilizacija za dugmad u tabeli */
+.srcdst button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* stilizacija za input polja u tabeli */
+.srcdst input {
+  width: 30px;
+  margin-right: 5px;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Stilizacija za dugmad */
+.srcdst button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Stilizacija za dugmad kada su u "završi" stanju */
+.srcdst button.finish {
+  background-color: #DC3545;
+}
+
+
+
+/* Stilizacija za grupu dugmadi */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top:50px;
+}
+
+/* Stilizacija za pojedinačna dugmad */
+.button-group button {
+  background-color: #1e242a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.slika{
+  margin-top: 50px;
+}
+.setup-container{
+  position: absolute;
+  top: 46%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 2; 
+  width: 35%;
+  height: 54%;
+  border: 2px solid gray;
+  border-radius: 7px;
+}
+table{
+  font-size: 25px;
+}
+.dugmee{
+  height: 45px;
+  width: 140px;
+  font-size: 25px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 50px !important;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: black;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.dugmee:hover{
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: white;
+}
+
+.dugmee:hover::before{
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+.dugmee::before{
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.dugmee:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.agent {
+  border: 2px solid transparent; /* Postavite podrazumevanu boju granice */
+}
+
+.agent:hover {
+  border: 2px solid blue; /* Promenite boju granice prilikom hovera */
+}
+
+.agent.selected {
+  border: 2px solid red !important; /* Promenite boju granice za izabranog agenta */
+}
+.agent.change {
+  border: 2px solid red !important; /* Prilagodite boju granice prema potrebi */
+}
+.agent.chosen {
+  border-color: red !important; /* Postavite željenu boju granice */
+}
+.agent.custom-border {
+  border-color: var(--agent-border-color, black);
+}
+select{
+  width: 70px;
+  height: 25px;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.game-over h2 {
+  margin-bottom: 10px;
+}
+
+.game-over button {
+  background-color: #fff;
+  color: #333;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.gameo{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.dugmeee{
+  height: 30px;
+  width: 165px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.dugmeee:hover{
+  background-color: rgb(237, 62, 62);
+}
+
+
+.dm{
+  height: 35px;
+  width: 200px;
+  font-size: 25px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: black;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.dm:hover{
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: white;
+}
+
+.dm:hover::before{
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+.dm::before{
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.dm:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.dmm{
+  height: 35px;
+  width: 200px;
+  font-size: 25px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: black;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-right: 280px;
+}
+
+.dmm:hover{
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: white;
+}
+
+.dmm:hover::before{
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+.dmm::before{
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.dmm:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+
+
+.es{
+  background-color: #1e242a;
+  margin-top: 50px;
+  width: 300px;
+  color: rgb(0, 244, 0);
+  text-align: center;
+  position: relative;
+  font-size: 13px;
+}
+
+.d{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
